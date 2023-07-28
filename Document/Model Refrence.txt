@@ -1,0 +1,24 @@
+Model => ProductsModel
+			(middledatabase model to hold the values)
+
+... Klickbook values
++
+	CLOUDSTOREID => xcart store ID
+	Active,updaterow,Removed => control flag
+	RetrievedDate => change applied date
+	xcartId => the xcart id of products
+	Parent => xcart id of original product (before the change happen)
+
+
+-----------------------------------------------------------------------------------------
+Model => KBcategoryListModel
+			(hold klickbook category values in middlewaredatabase)
+
+	CLOUDSTOREID => xcart store ID
+	Active,Updated,Removed => control flag
+	CategoryKey => KB category guid
+	NewValue => new category description that replaced
+	CategoryId => xcart category id
+
+
+*** Other models are xcart models

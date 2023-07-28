@@ -1,0 +1,34 @@
+
+
+
+Products flag:
+				ACTIVE
+									Active			Update			Remove
+New Product(ready to add)			  1				  0				  0
+A product need to be updated		  1				  1				  0
+A product need to be removed		  1				  0				  1
+
+
+			   HISTORY
+An added product					  0				  0				  0
+A removed product					  0				  0				  1
+an updated product(Old values)		  0				  1				  1
+an updated product(Current values)    0				  1				  0
+
+
+
+------------------------------------------------------------------------------------------
+Category flag:
+				ACTIVE
+									Active			Update			Remove
+New category (ready to add)			  1				  0				  0
+A category need to be updated		  1				  1				  0
+A category need to be removed		  1				  0				  1
+
+
+			   HISTORY
+An added category					  0				  0				  0
+A removed category					  0				  0				  1
+an updated category                   0				  1				  0
+
+

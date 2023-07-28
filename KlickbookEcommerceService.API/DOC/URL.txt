@@ -1,0 +1,11 @@
+﻿//Hangfire and all services in detail (video)
+https://www.youtube.com/watch?v=rugxQIH_p3A
+
+//RabbitMQ
+https://www.c-sharpcorner.com/article/rabbitmq-message-queue-using-net-core-6-web-api/
+https://blog.devops.dev/rabbitmq-message-queue-using-net-core-6-web-api-c0fcfa72169c
+
+
+//Create a queue and any HTTP request go through the queue
+https://www.c-sharpcorner.com/article/how-to-call-background-service-from-net-core-web-api/
+https://shadynagy.com/executing-background-tasks-dotnet/
