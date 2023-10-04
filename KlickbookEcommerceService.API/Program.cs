@@ -44,6 +44,7 @@ using Microsoft.Extensions.Hosting;
 using MongoDB.Bson.Serialization.Conventions;
 using System;
 using KlickbookEcommerceService.API.Services;
+using KlickbookEcommerceService.API.Quemanager;
 
 var builder = WebApplication.CreateBuilder(args);
 HostApplicationBuilder Appbuilder = Host.CreateApplicationBuilder(args);
@@ -169,43 +170,34 @@ services.AddTransient<IXcartService, XcartService>();
 services.AddTransient<IFtrMasterDataService, FtrMasterDataService>();
 services.AddTransient<IMasterDataService, MasterDataService>();
 services.AddTransient<ITenantService, TenantService>();
+services.AddTransient<ISampleService, SampleService>();
 #endregion
 
 #region Add Worker
+//builder.Services.AddSingleton<MonitorLoop>();
 
-
-services.AddHostedService<QueuedHostedService>();
-//services.AddSingleton<IBackgroundTaskQueue, QueService>();
-
-
-
-
-
-//IHostBackgroundService
-services.AddHostedService<IHostQueManager>();
-
-
-
-builder.Services.AddSingleton<MonitorLoop>();
+services.AddSingleton<IBackgroundTaskQueue, BackgroundTaskQueue>();
+services.AddHostedService<BackgroundTaskService>();
 
 //BackgroundService
-builder.Services.AddHostedService<SMSQueManager>();
-builder.Services.AddSingleton<IBackgroundTaskQueue>(_ =>
-{
-    if (!int.TryParse(builder.Configuration["QueueCapacity"], out var queueCapacity))
-    {
-        queueCapacity = 100;
-    }
+//builder.Services.AddHostedService<SMSQueManager>();
+builder.Services.AddHostedService<PriorityQueComplex>();
 
-    return new QueService(queueCapacity);
-});
 
-IHost host = builder.Build();
+//builder.Services.AddSingleton<IBackgroundTaskQueue>(_ =>
+//{
+//    if (!int.TryParse(builder.Configuration["QueueCapacity"], out var queueCapacity))
+//    {
+//        queueCapacity = 100;
+//    }
 
-MonitorLoop monitorLoop = host.Services.GetRequiredService<MonitorLoop>()!;
-monitorLoop.StartMonitorLoop();
+//    return new IBackgroundTaskQueue(queueCapacity);
+//});
 
-host.Run();
+//IHost host = builder.Build();
+//MonitorLoop monitorLoop = host.Services.GetRequiredService<MonitorLoop>()!;
+//monitorLoop.StartMonitorLoop();
+//host.Run();
 
 #endregion
 
@@ -217,6 +209,9 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
+
+//var monitorloop = app.Services.GetRequiredService<MonitorLoop>()!;
+//monitorloop.StartMonitorLoop();
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
