@@ -22,3 +22,15 @@ C:\GitRepo\KlickbookEcommerceService\V2\KlickbookEC\KlickbookEcommerceService\Kl
 C:\GitRepo\KlickbookEcommerceService\V2\KlickbookEC\KlickbookEcommerceService\KlickbookEcommerceService.Common\obj\Debug\net6.0\refint\KlickbookEcommerceService.Common.dll
 C:\GitRepo\KlickbookEcommerceService\V2\KlickbookEC\KlickbookEcommerceService\KlickbookEcommerceService.Common\obj\Debug\net6.0\KlickbookEcommerceService.Common.pdb
 C:\GitRepo\KlickbookEcommerceService\V2\KlickbookEC\KlickbookEcommerceService\KlickbookEcommerceService.Common\obj\Debug\net6.0\ref\KlickbookEcommerceService.Common.dll
+C:\GitRepo\BackgroundServices\KlickbookEcommerceService.Common\bin\Debug\net6.0\KlickbookEcommerceService.Common.deps.json
+C:\GitRepo\BackgroundServices\KlickbookEcommerceService.Common\bin\Debug\net6.0\KlickbookEcommerceService.Common.dll
+C:\GitRepo\BackgroundServices\KlickbookEcommerceService.Common\bin\Debug\net6.0\KlickbookEcommerceService.Common.pdb
+C:\GitRepo\BackgroundServices\KlickbookEcommerceService.Common\obj\Debug\net6.0\KlickbookEcommerceService.Common.csproj.AssemblyReference.cache
+C:\GitRepo\BackgroundServices\KlickbookEcommerceService.Common\obj\Debug\net6.0\KlickbookEcommerceService.Common.GeneratedMSBuildEditorConfig.editorconfig
+C:\GitRepo\BackgroundServices\KlickbookEcommerceService.Common\obj\Debug\net6.0\KlickbookEcommerceService.Common.AssemblyInfoInputs.cache
+C:\GitRepo\BackgroundServices\KlickbookEcommerceService.Common\obj\Debug\net6.0\KlickbookEcommerceService.Common.AssemblyInfo.cs
+C:\GitRepo\BackgroundServices\KlickbookEcommerceService.Common\obj\Debug\net6.0\KlickbookEcommerceService.Common.csproj.CoreCompileInputs.cache
+C:\GitRepo\BackgroundServices\KlickbookEcommerceService.Common\obj\Debug\net6.0\KlickbookEcommerceService.Common.dll
+C:\GitRepo\BackgroundServices\KlickbookEcommerceService.Common\obj\Debug\net6.0\refint\KlickbookEcommerceService.Common.dll
+C:\GitRepo\BackgroundServices\KlickbookEcommerceService.Common\obj\Debug\net6.0\KlickbookEcommerceService.Common.pdb
+C:\GitRepo\BackgroundServices\KlickbookEcommerceService.Common\obj\Debug\net6.0\ref\KlickbookEcommerceService.Common.dll

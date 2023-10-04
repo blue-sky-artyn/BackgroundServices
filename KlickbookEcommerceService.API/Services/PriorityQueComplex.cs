@@ -1,19 +1,24 @@
 ﻿using System.Collections.Generic;
 using System.Diagnostics;
 using KlickbookEcommerceService.Common;
+using KlickbookEcommerceService.Service;
 
 namespace KlickbookEcommerceService.API.Services;
 
 //Priority Queue
 //https://www.youtube.com/watch?v=4XSSC6uPFNA
 
-public class PriorityQue : BackgroundService
+public class PriorityQueComplex : BackgroundService
 {
-    private readonly ILogger<PriorityQue> _logger;
+    private readonly ILogger<PriorityQueComplex> _logger;
+    //private IBackgroundTaskQueue _queue;
+    private readonly ISampleService _sampleservice;
+    private readonly IBackgroundTaskQueue _backgroundTaskQueue;
 
-    public PriorityQue(ILogger<PriorityQue> _logger)
-        => this._logger = _logger;
+    public PriorityQueComplex(ILogger<PriorityQueComplex> _logger, IBackgroundTaskQueue _queue, ISampleService _sampleservice, IBackgroundTaskQueue _backgroundTaskQueue)
+        => (this._logger, this._sampleservice, this._backgroundTaskQueue) = (_logger, _sampleservice, _backgroundTaskQueue);
 
+    #region Declaration
     class StatusComparer : IComparer<(Status, long)>
     {
 
@@ -32,6 +37,8 @@ public class PriorityQue : BackgroundService
     }
 
     record User(string value);
+    #endregion
+
 
     protected async override Task ExecuteAsync(CancellationToken stoppingToken)
     {
@@ -59,11 +66,25 @@ public class PriorityQue : BackgroundService
         {
             try
             {
-                while (priorityQueue.TryDequeue(out string queueItem, out (Status, long) priority))
+                _backgroundTaskQueue.QueueBackgroundWorkItem(async token =>
                 {
-                    Console.WriteLine($"Item : {queueItem}. Priority : {priority}");
-                    _logger.LogInformation($"Item : {queueItem}. Priority : {priority}");
-                }
+                    await _sampleservice.RunThePriorityQueue(priorityQueue, token);
+                });
+
+
+
+
+
+                //await _queue.QueueBackgroundWorkItemAsync(async (token) =>
+                //{
+                //    //await _mailService.SendAsync(mailData, token);
+
+                //    while (priorityQueue.TryDequeue(out string queueItem, out (Status, long) priority))
+                //    {
+                //        Console.WriteLine($"Item : {queueItem}. Priority : {priority}");
+                //        _logger.LogInformation($"Item : {queueItem}. Priority : {priority}");
+                //    }
+                //});
             }
             catch (Exception ex)
             {

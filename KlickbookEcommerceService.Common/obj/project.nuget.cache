@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "AkXab7GL952iGxnr2fPK7Lx3rt1Y7f5UmAK9GERyKyccjyYZ4bzn1TM5Ylgswrulld/WJ3o81udOo8COHBWwRQ==",
+  "dgSpecHash": "10x6j/BabG11nQ03afhuSX0bkUQ0fG68R+EAf1sd3Uputqr8oSh5vBtfdzdXC9flDDjFj/jM1EvW97SzQ1o80Q==",
   "success": true,
-  "projectFilePath": "C:\\GitRepo\\KlickbookEcommerceService\\V2\\KlickbookEC\\KlickbookEcommerceService\\KlickbookEcommerceService.Common\\KlickbookEcommerceService.Common.csproj",
+  "projectFilePath": "C:\\GitRepo\\BackgroundServices\\KlickbookEcommerceService.Common\\KlickbookEcommerceService.Common.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.aspnetcore.antiforgery\\2.2.0\\microsoft.aspnetcore.antiforgery.2.2.0.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.2.0\\microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",

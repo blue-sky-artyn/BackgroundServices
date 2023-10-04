@@ -20,10 +20,10 @@ namespace KlickbookEcommerceService.API.Controllers
         {
             // and more...
             // Queue processing
-            await queue.QueueBackgroundWorkItemAsync(async (token) =>
-            {
-                //await _mailService.SendAsync(mailData, token);
-            });
+            //await queue.QueueBackgroundWorkItemAsync(async (token) =>
+            //{
+            //    //await _mailService.SendAsync(mailData, token);
+            //});
 
             return Ok();
         }
@@ -31,15 +31,15 @@ namespace KlickbookEcommerceService.API.Controllers
         [HttpGet]
         public IActionResult StartProcessing()
         {
-            queue.QueueBackgroundWorkItem(async token =>
-            {
-                // put processing code here
-                object response = DoSomethind();
-                logger.LogInformation("my service runs fine, ... " + response);
-                token.ThrowIfCancellationRequested();
-            });
+            //queue.QueueBackgroundWorkItem(async token =>
+            //{
+            //    // put processing code here
+            //    object response = DoSomethind();
+            //    logger.LogInformation("my service runs fine, ... " + response);
+            //    token.ThrowIfCancellationRequested();
+            //});
     
-        return Ok();
+            return Ok("This API ran.");
         }
 
         private string DoSomethind()

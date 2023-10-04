@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "hknrafaI2ZZKA3CWIY2fbLkmIrPQXthgWts+zwxVjhiD03Pk1k2uWyqinnyJDHLN1hiVAHNcy+VRhJJBhMjj9A==",
+  "dgSpecHash": "+qWIyou34cM4lQgeP7Iqq4t3gsi6KNAKGXtpI535TI6cBHKdZ6M7tWzvQp82G6cM2hLIxyUQoesyex6/zm/PaQ==",
   "success": true,
-  "projectFilePath": "C:\\GitRepo\\KlickbookEcommerceService\\V2\\KlickbookEC\\KlickbookEcommerceService\\KlickbookEcommerceService.Service\\KlickbookEcommerceService.Service.csproj",
+  "projectFilePath": "C:\\GitRepo\\BackgroundServices\\KlickbookEcommerceService.Service\\KlickbookEcommerceService.Service.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Administrator\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\automapper.collection\\9.0.0\\automapper.collection.9.0.0.nupkg.sha512",

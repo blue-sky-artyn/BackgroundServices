@@ -11287,11 +11287,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\GitRepo\\KlickbookEcommerceService\\V2\\KlickbookEC\\KlickbookEcommerceService\\KlickbookEcommerceService.Service\\KlickbookEcommerceService.Service.csproj",
+      "projectUniqueName": "C:\\GitRepo\\BackgroundServices\\KlickbookEcommerceService.Service\\KlickbookEcommerceService.Service.csproj",
       "projectName": "KlickbookEcommerceService.Service",
-      "projectPath": "C:\\GitRepo\\KlickbookEcommerceService\\V2\\KlickbookEC\\KlickbookEcommerceService\\KlickbookEcommerceService.Service\\KlickbookEcommerceService.Service.csproj",
+      "projectPath": "C:\\GitRepo\\BackgroundServices\\KlickbookEcommerceService.Service\\KlickbookEcommerceService.Service.csproj",
       "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-      "outputPath": "C:\\GitRepo\\KlickbookEcommerceService\\V2\\KlickbookEC\\KlickbookEcommerceService\\KlickbookEcommerceService.Service\\obj\\",
+      "outputPath": "C:\\GitRepo\\BackgroundServices\\KlickbookEcommerceService.Service\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -11313,8 +11313,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\GitRepo\\KlickbookEcommerceService\\V2\\KlickbookEC\\KlickbookEcommerceService\\KlickbookEcommerceService.Common\\KlickbookEcommerceService.Common.csproj": {
-              "projectPath": "C:\\GitRepo\\KlickbookEcommerceService\\V2\\KlickbookEC\\KlickbookEcommerceService\\KlickbookEcommerceService.Common\\KlickbookEcommerceService.Common.csproj"
+            "C:\\GitRepo\\BackgroundServices\\KlickbookEcommerceService.Common\\KlickbookEcommerceService.Common.csproj": {
+              "projectPath": "C:\\GitRepo\\BackgroundServices\\KlickbookEcommerceService.Common\\KlickbookEcommerceService.Common.csproj"
             }
           }
         }
@@ -11438,7 +11438,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
       }
     }
   }

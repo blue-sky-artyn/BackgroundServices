@@ -35,16 +35,13 @@ public sealed class MonitorLoop
             //if (keyStroke.Key == ConsoleKey.W)
             //{
                 // Enqueue a background work item
-                await _taskQueue.QueueBackgroundWorkItemAsync(BuildWorkItemAsync);
+                //await _taskQueue.QueueBackgroundWorkItemAsync(BuildWorkItemAsync);
             //}
         }
     }
 
     private async ValueTask BuildWorkItemAsync(CancellationToken token)
     {
-        // Simulate three 5-second tasks to complete
-        // for each enqueued work item
-
         int delayLoop = 0;
         var guid = Guid.NewGuid();
 
